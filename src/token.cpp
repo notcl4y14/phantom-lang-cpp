@@ -20,6 +20,6 @@ public:
 	};
 
 	string _string() {
-		return "Token { type: " + to_string(type) + ", value: " + value + " }";
+		return "Token { type: " + to_string(type) + ", value: '" + value + "' }";
 	};
 };

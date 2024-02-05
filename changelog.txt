@@ -8,6 +8,8 @@
 // ---------------------------------------------------------
 
 // 2/5/2024
+- Added quotes in the value in Token._string()
+----------
 - Created "src" folder
 	+ token.cpp
 	+ token.h
