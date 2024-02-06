@@ -7,6 +7,17 @@
 // UNDER DEVELOPMENT VERSIONS
 // ---------------------------------------------------------
 
+// 2/6/2024
+- The language now runs the files
+- Added more token types
+	+ number
+	+ string
+- Created "util" folder
+	+ string.cpp
+	+ string.h
+- Created "tests" folder
+	+ test.pha
+
 // 2/5/2024
 - Added quotes in the value in Token._string()
 ----------

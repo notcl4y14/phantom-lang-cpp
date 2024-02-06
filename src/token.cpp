@@ -3,23 +3,17 @@
 
 using namespace std;
 
-class Token {
-public:
-	int type;
-	string value;
+Token::Token(int type, std::string value) {
+    this->type = type;
+    this->value = value;
+}
 
-	Token(int type, string value) {
-		this->type = type;
-		this->value = value;
-	};
+Token::~Token() {}
 
-	~Token() {};
+bool Token::matches(int type, std::string value) {
+    return this->type == type && this->value == value;
+}
 
-	bool matches(int type, string value) {
-		return this->type == type && this->value == value;
-	};
-
-	string _string() {
-		return "Token { type: " + to_string(type) + ", value: '" + value + "' }";
-	};
-};
+std::string Token::_string() {
+    return "Token { type: " + std::to_string(type) + ", value: \"" + value + "\" }";
+}

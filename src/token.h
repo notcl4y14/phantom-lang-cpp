@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 #define TT_Number 0
 #define TT_String 1
@@ -13,16 +14,16 @@
 #define TT_Comment 8
 #define TT_EOF 9
 
-// class Token {
-// public:
-// 	int type;
-// 	std::string value;
+using namespace std;
 
-// 	Token(int type, std::string value);
-// 	~Token();
+class Token {
+public:
+	int type;
+	std::string value;
 
-// 	bool matches(int type, std::string value);
-// 	std::string to_string();
-// };
+	Token(int type, std::string value);
+	~Token();
 
-class Token;
+	bool matches(int type, std::string value);
+	std::string _string();
+};
